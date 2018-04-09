@@ -1,4 +1,6 @@
 import numpy as np
+from sklearn import	metrics	
+
 def std(x,y):
 	return x ** y
 
@@ -23,3 +25,5 @@ def diff(x,y):
 	else:
 		return 0;
 	
+def confusion_matrix(y_true,y_pred):
+	return metrics.confusion_matrix(y_true,	y_pred)	
