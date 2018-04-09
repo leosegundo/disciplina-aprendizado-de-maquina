@@ -24,6 +24,7 @@ def diff(x,y):
 		return 1
 	else:
 		return 0;
+
 	
 def confusion_matrix(y_true,y_pred):
 	return metrics.confusion_matrix(y_true,	y_pred)	

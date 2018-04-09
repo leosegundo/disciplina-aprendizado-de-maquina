@@ -17,13 +17,3 @@ def standardize(X):
 def normalize(X):
 	y = [((X[i] - min(X))/(max(X) - min(X))) for i in range(0,len(X))] 
 	return y
-
-
-
-a = [1,2,3,4,5]
-
-k = standardize(a)
-#print(k)
-
-#k = normalize(a)
-print(k)
