@@ -34,10 +34,13 @@ class LogisticRegression:
 	
 	np.random.seed(3)
 	num_pos = 5000
-	epochs = 5
-	learning_rate = 0.0001
+	epochs = 0
+	learning_rate = 0
 	beta = 0
-	
+	def __init__(self,epochs,learning_rate):
+		self.epochs = epochs
+		self.learning_rate = learning_rate
+
 	def fit(self,X,y): 
 		beta = np.zeros(X.shape[1]).reshape(X.shape[1], 1)
 		for step in np.arange(self.epochs):
